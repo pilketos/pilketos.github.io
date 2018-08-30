@@ -1,0 +1,234 @@
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 20px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
+.row{
+    margin-top:20px;
+}
+.row:first-child{
+    margin-top: 0px;
+}
+.logo{
+  background-image: url("../img/vote.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20vw;
+}
+.foto{
+    width: 12vw;
+    height: 16vw;
+    margin:1vw auto;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    float:right;
+}
+.foto#kandidat1{
+    background-image: url(../img/kandidat1.png);
+}
+.foto#kandidat2{
+    background-image: url(../img/kandidat2.png);
+}
+.foto#kandidat3{
+    background-image: url(../img/kandidat3.png);
+}
+.info{
+    float: right;
+    height: 100px;
+    background-color: #EEE;
+    width: 20vw;
+}
+.infodekorleft{
+    width: 0;
+    height: 100%;
+    border-right: 30px solid #EEE;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    float: right;
+}
+.infodekorright{
+    width: 0;
+    height: 100%;
+    border-left: 30px solid #EEE;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    margin-top: 1vw;
+    float: right;
+}
+.info > .nama{
+    background-color: #444444;
+    height: 40px;
+    padding: 5px;
+}
+.info > .nama > .text{
+    font-size: 15pt;
+    color: #FFF;
+    height: 100%;
+}
+.namadekorleft{
+    width: 0px;
+    border-right: 12px solid #444444;
+    border-top: 20px solid transparent;
+    border-left: 12px solid transparent;
+    border-bottom: 20px solid #444444;
+    position: absolute;
+    margin-left: -24px;
+}
+.namadekorright{
+    width: 0px;
+    border-left: 12px solid #444444;
+    border-top: 20px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 20px solid #444444;
+    margin-right: -24px;
+    margin-top: -40px;
+    float: right;
+}
+.bar{
+    width: 100%;
+    height: 50px;
+    float: right;
+    background-color: #F5AB35;
+}
+.bar > .uncolor{
+    width: 100%;
+    height: 100%;
+    float:left;
+    background-color: #EEE;
+}
+.bar > .info{
+    position: absolute;
+    font-size: 2vw;
+    margin-top: 15px;
+    padding-left: 20px;
+    background-color: transparent;
+    float: none;
+    height: 0px;
+}
+.judul{
+    background-color: #444444;
+    height:60px;
+    text-align: center;
+    padding: 12px
+}
+.judul > .text{
+    font-size: 18pt;
+    color: #FFF;
+    margin-left: 10px;
+}
+.judul > .text.btn{
+    font-size: 8pt;
+    margin-top: -8px;
+    color:#000;
+}
+.judul > .text:first-child{
+    margin-left:0px;
+}
+.juduldekorleft{
+    width: 0;
+    position: absolute;
+    border-right: 10px solid #444444;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    left: 5px;
+    top: 0px;
+}
+.juduldekorright{
+    width: 0;
+    position: absolute;
+    border-left: 10px solid #444444;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    right: 5px;
+    top: 0px;
+}
+#daftarsuara > .list-group{
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#splash{
+    background-color: none;
+}
+.name{
+    background-color: #444444;
+    font-size: 18pt;
+    text-align: center;
+    color: #FFF;
+    padding: 20px;
+}
+.namedekorleft{
+    width: 0;
+    position: absolute;
+    border-right: 10px solid #444444;
+    border-top: 37px solid transparent;
+    border-bottom: 37px solid transparent;
+    left: 6px;
+    top: 0px;
+}
+.namedekorright{
+    width: 0;
+    position: absolute;
+    border-left: 10px solid #444444;
+    border-top: 37px solid transparent;
+    border-bottom: 37px solid transparent;
+    right: 6px;
+    top: 0px;
+}
+.subname{
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+    background-color: #444444;
+    font-size: 9pt;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+}
+.footer a{
+    color:#FFF;
+}
+.footerdekorleft{
+    width: 0;
+    position: absolute;
+    border-right: 10px solid #444444;
+    border-top: 19px solid transparent;
+    border-bottom: 18px solid transparent;
+    left: 5px;
+    top: 0px;
+}
+.footerdekorright{
+    width: 0;
+    position: absolute;
+    border-left: 10px solid #444444;
+    border-top: 19px solid transparent;
+    border-bottom: 18px solid transparent;
+    right: 5px;
+    top: 0px;
+}
+.min{
+	height: 20px;
+	background-color: #CF000F;
+	font-size: 12pt;
+	color: #FFF;
+	padding: 1px;
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.add{
+	height: 20vw;
+	cursor: pointer;
+	cursor: hand;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+        <link rel="icon" href="img/vote.png.jpg">
+        <title>Perhitungan Suara</title>
+    </head>
+    <body>
+        <div id="fullpage">
+              <div class="section" id="splash">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-sm-1"></div>
+                          <div class="col-sm-10">
+                              <div class="namedekorleft"></div>
+                              <div class="name">Perhitungan Suara</div>
+                              <div class="namedekorright"></div>
+                          </div>
+                          <div class="col-sm-1"></div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-2"></div>
+                          <div class="col-sm-8">
+                              <div class="subname"></div>
+                          </div>
+                          <div class="col-sm-2"></div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-1"></div>
+                          <div class="col-sm-10">
+                              <div class="row">
+                                  <div class="col-md-offset-4 col-sm-4 logo">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-1"></div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <div class="footerdekorleft"></div>
+                              <div class="footer">
+                                2017 (C) <a href="mailto:iqbal19600@gmail.com">MPK SMASA</a>
+                              </div>
+                              <div class="footerdekorright"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+			       <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <div class="namedekorleft"></div>
+                            <div class="name">Perhitungan Suara</div>
+                            <div class="namedekorright"></div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <div class="subname"></div>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="foto" id="kandidat1"><div class="add" index="1"></div></div>
+                                    <div class="infopanel">
+                                      <div class="info" id="kandidat1">
+                                          <div class="namadekorleft"></div>
+                                          <div class="nama"><span class="text">Calon No. 1</span></div>
+                                          <div id="hidden" style="display:none">
+                                          <div class="bar" id="kandidat1">
+                                              <div class="uncolor"></div>
+                                              <div class="info">0.00%</div>
+                                          </div>
+                                          </div>
+                                      </div>
+                                      <div class="infodekorleft"></div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="foto" id="kandidat2"><div class="add" index="2"></div></div>
+                                    <div class="infopanel">
+                                      <div class="info" id="kandidat2">
+                                          <div class="namadekorleft"></div>
+                                          <div class="nama"><span class="text">Calon No. 2</span></div>
+                                          <div id="hidden" style="display:none">
+                                          <div class="bar" id="kandidat2">
+                                              <div class="uncolor"></div>
+                                              <div class="info">0.00%</div>
+                                          </div>
+                                          </div>
+                                      </div>
+                                      <div class="infodekorleft"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="foto" id="kandidat3"><div class="add" index="3"></div></div>
+                                  <div class="infopanel">
+                                    <div class="info" id="kandidat3">
+                                        <div class="namadekorleft"></div>
+                                        <div class="nama"><span class="text">Calon No. 3</span></div>
+                                        <div id="hidden" style="display:none">
+                                        <div class="bar" id="kandidat3">
+                                            <div class="uncolor"></div>
+                                            <div class="info">0.00%</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="infodekorleft"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="footerdekorleft"></div>
+                            <div class="footer">
+                              2017 (C) <a href="mailto:azamaulana@outlook.com">MPK SMASA</a>
+                            </div>
+                            <div class="footerdekorright"></div>
+                        </div>
+                    </div>
+                    <button onclick="muncul()">On</button>
+                </div>
+            </div>
+        </div>
+        <script>
+          function muncul()
+          {
+            var idx = document.querySelectorAll("[id='hidden']");
+
+            for(var i = 0; i < idx.length; i++)
+            {
+              idx[i].style.display = "inline";
+            }
+          };
+        </script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </body>
+</html>
