@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/jquery.fullPage.css"/>
         <link rel="icon" href="img/vote.png.jpg">
-        <title>Pemungutan Suara</title>
+        <title>Perhitungan Suara</title>
     </head>
     <body>
         <div id="fullpage">
@@ -16,7 +16,7 @@
                           <div class="col-sm-1"></div>
                           <div class="col-sm-10">
                               <div class="namedekorleft"></div>
-                              <div class="name">Pemungutan Suara</div>
+                              <div class="name">Perhitungan Suara</div>
                               <div class="namedekorright"></div>
                           </div>
                           <div class="col-sm-1"></div>
@@ -138,12 +138,37 @@
                             <div class="footerdekorright"></div>
                         </div>
                     </div>
-                    <button onclick="muncul()">On</button>
-                    <button onclick="hide()">Off</button>
+                    <div class="row">
+                      <button onclick="muncul()">On</button>
+                      <button onclick="hide()">Off</button>
+                      <button onclick="submit()">Submit</button>
+                      <button onclick="show()">alert</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/taffy.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+        <script type="text/javascript" src="js/maindb.js"></script>
         <script>
+          function show(){
+            alert(main({nama:"M Iqbal Maulana"}).first().suara)
+          };
+          function submit()
+          {
+              var tambah = main({nama:"M Iqbal Maulana"}).first().suara + db({nama:"M Iqbal Maulana"}).first().suara;
+              main({nama:"M Iqbal Maulana"}).update({suara:tambah});
+
+              var kurang = main({nama:"David Augusta Chandra"}).first().suara + db({nama:"David Augusta Chandra"}).first().suara;
+              main({nama:"David Augusta Chandra"}).update({suara:kurang});
+
+              var bagi = main({nama:"Jirzis Wisam Muhammad"}).first().suara + db({nama:"Jirzis Wisam Muhammad"}).first().suara;
+              main({nama:"Jirzis Wisam Muhammad"}).update({suara:bagi});
+          };
           function muncul()
           {
             var idx = document.querySelectorAll("[id='hidden']");
@@ -163,10 +188,5 @@
             }
           };
         </script>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-        <script type="text/javascript" src="js/data.js"></script>
-        <script type="text/javascript" src="js/javascript.js"></script>
     </body>
 </html>
