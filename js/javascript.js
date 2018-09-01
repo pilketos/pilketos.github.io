@@ -1,10 +1,12 @@
 $('#fullpage').fullpage();
+var db = TAFFY([{nama:"M Iqbal Maulana", suara:0}, {nama:"David Augusta Chandra", suara:0}, {nama:"Jirzis Wisam Muhammad", suara:0}])
 var data = [];
 var i = 0;
 $.each(kandidat, function(key, value){
     $('.info#kandidat'+(key+1)).children('.nama').children('.text').text(value);
     $('label#suara'+(key+1)).text(value);
 });
+var peserta = ['M Iqbal Maulana','David Augusta Chandra','Jirzis Wisam Muhammad'];
 var suara = [0,0,0];
 var suaratidaksah = 0;
 function counting(){
@@ -23,6 +25,7 @@ $(".add").click(function(){
     var index = $(this).attr("index");
     index = Number(index);
     suara[(index-1)] = suara[(index-1)] + 1;
+    db({nama:peserta[(index-1)]}).update({suara:suara[(index-1)]})
     counting();
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', 'audio/click.mp3');
